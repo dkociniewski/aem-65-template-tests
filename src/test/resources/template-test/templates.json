@@ -1,0 +1,52 @@
+{
+  "jcr:primaryType": "sling:OrderedFolder",
+  "jcr:title": "We.Retail",
+  "cq:templateTypesOrigin": "local",
+  "cq:templatesOrigin": "local",
+  "settings": {
+    "jcr:primaryType": "sling:Folder",
+    "wcm": {
+      "jcr:primaryType": "cq:Page",
+      "templates": {
+        "jcr:primaryType": "cq:Page",
+        "hero-page": {
+          "jcr:primaryType": "cq:Template",
+          "thumbnail.png": {
+            "jcr:primaryType": "nt:file",
+            "jcr:content": {
+              "jcr:primaryType": "nt:resource",
+              "jcr:mimeType": "image/png",
+              ":jcr:data": 59357,
+              "jcr:uuid": "4da9a62e-5ad5-420b-9648-d90505e7b331"
+            }
+          },
+          "initial": {
+            "jcr:primaryType": "cq:Page",
+            "jcr:content": {
+              "cq:template": "/conf/we-retail/settings/wcm/templates/hero-page",
+              "jcr:created": "Tue May 07 2019 12:48:45 GMT+0200",
+              "sling:resourceType": "weretail/components/structure/page"
+            }
+          },
+          "jcr:content": {
+            "jcr:primaryType": "cq:PageContent",
+            "jcr:title": "Hero Page",
+            "status": "enabled",
+            "cq:templateType": "/conf/we-retail/settings/wcm/template-types/empty-page"
+          },
+          "structure": {
+            "jcr:primaryType": "cq:Page",
+            "jcr:content": {
+              "jcr:primaryType": "cq:PageContent",
+              "cq:template": "/conf/we-retail/settings/wcm/templates/hero-page",
+              "cq:deviceGroups": [
+                "mobile/groups/responsive"
+              ],
+              "sling:resourceType": "weretail/components/structure/page"
+            }
+          }
+        }
+      }
+    }
+  }
+}
